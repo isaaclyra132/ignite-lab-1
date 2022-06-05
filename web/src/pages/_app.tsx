@@ -1,9 +1,11 @@
 import { UserProvider } from "@auth0/nextjs-auth0"
 
 function MyApp({ Component, pageProps }) {
-  <UserProvider>
-    <Component {...pageProps} />
-  </UserProvider>
+  return (
+    <UserProvider>
+      <Component {...pageProps} />
+    </UserProvider>
+  )
 }
 
 export default MyApp

@@ -4,14 +4,15 @@ export default function Home() {
   const { user } = useUser();
 
   return (
-    <div>
-      <h1>Hello World</h1>
+    <>
+      <h1>Brenda eh uma galada</h1>
 
       <pre>
         {JSON.stringify(user, null, 2)}
       </pre>
 
-      <a href="">Login</a>
-    </div>
+      <a href="/api/auth/callback">Login</a>
+    </>
   )
+
 }
